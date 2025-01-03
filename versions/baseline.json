@@ -1,0 +1,8 @@
+{
+  "default": {
+    "tensorflow": {
+      "baseline": "2.15.0",
+      "port-version": 0
+	}
+  }
+}
