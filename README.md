@@ -30,4 +30,12 @@ you need to create a new baseline in the baseline.json file.
 }
 See: https://learn.microsoft.com/en-us/vcpkg/maintainers/registries
 Example vcpkg-registry: https://github.com/vcpkg/example-filesystem-registry
+
+Steps to update ports:
+1. commit changes for ports
+2. git rev-parse HEAD:ports/<name>
+3. copy hash and update git-tree hash inside versions/<name>.json
+4. git add versions
+5. git commit --amend
+6. push
 ```
