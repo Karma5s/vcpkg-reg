@@ -28,8 +28,7 @@ you need to create a new baseline in the baseline.json file.
     }
   }
 }
-See: https://learn.microsoft.com/en-us/vcpkg/maintainers/registries
-Example vcpkg-registry: https://github.com/vcpkg/example-filesystem-registry
+
 
 Steps to update ports:
 1. commit changes for ports
@@ -38,4 +37,15 @@ Steps to update ports:
 4. git add versions
 5. git commit --amend
 6. push
+7. copy latest commit hash and update vcpkg-configuration.json baseline with hash
+
+* portfile.cmake
+See reference
+- https://github.com/microsoft/vcpkg-docs/blob/vcpkg-registry/ports/beicode/portfile.cmake
+- https://learn.microsoft.com/en-us/vcpkg/maintainers/functions/vcpkg_from_git
 ```
+
+### Useful Links
+- https://learn.microsoft.com/en-us/vcpkg/maintainers/functions/vcpkg_from_git
+- See: https://learn.microsoft.com/en-us/vcpkg/maintainers/registries
+- Example vcpkg-registry: https://github.com/vcpkg/example-filesystem-registry
