@@ -1,7 +1,9 @@
-vcpkg_from_git(
+vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
-  URL https://github.com/Karma5s/vcpkg-reg
-  REF 4a801068c52b2dcda4eb6c50f53a0e9aeebdfc1f
+  REF Karma5s/vcpkg-reg
+  REF 4c1847d3619d47f840cdb4b7441519da4913b65f
+  SHA512 0
+  HEAD_REF master
   LFS
 )
 
