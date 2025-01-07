@@ -1,9 +1,7 @@
-vcpkg_from_github(
+vcpkg_from_git(
   OUT_SOURCE_PATH SOURCE_PATH
-  REPO Karma5s/vcpkg-reg
-  REF "0.0.1049"
-  SHA512 0
-  HEAD_REF master
+  URL https://github.com/Karma5s/vcpkg-reg
+  REF 9700ecb1e72f88782406803e8493635240434196
 )
 
 file(INSTALL "${CMAKE_CURRENT_LIST_DIR}/bin/"
