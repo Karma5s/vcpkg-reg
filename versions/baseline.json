@@ -3,6 +3,10 @@
     "tensorflow": {
       "baseline": "2.15.0",
       "port-version": 0
-	}
+    },
+    "velopack": {
+      "baseline": "0.0.1049",
+      "port-version": 0
+    }
   }
 }
