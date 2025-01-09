@@ -8,6 +8,9 @@ file(INSTALL "${CMAKE_CURRENT_LIST_DIR}/bin/"
     DESTINATION "${CURRENT_PACKAGES_DIR}/bin"
     FILES_MATCHING PATTERN "*.dll")
 
+file(RENAME "${CURRENT_PACKAGES_DIR}/bin/velopack_libc_win_x64_msvc.dll"
+            "${CURRENT_PACKAGES_DIR}/bin/velopack_libc.dll")
+
 file(INSTALL "${CMAKE_CURRENT_LIST_DIR}/lib/"
     DESTINATION "${CURRENT_PACKAGES_DIR}/lib"
     FILES_MATCHING PATTERN "*.lib")
