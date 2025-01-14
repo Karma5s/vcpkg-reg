@@ -26,6 +26,6 @@ vcpkg_extract_source_archive_ex(
     NO_REMOVE_ONE_LEVEL
 )
 
-file(INSTALL "${SOURCE_PATH}" 
-    DESTINATION "${CURRENT_PACKAGES_DIR}/bin"
-     FILES_MATCHING PATTERN "*.dll")
+file(GLOB CUDA_DLLS "${SOURCE_PATH}/*.dll")
+file(INSTALL "${CUDA_DLLS}" 
+    DESTINATION "${CURRENT_PACKAGES_DIR}/bin")
