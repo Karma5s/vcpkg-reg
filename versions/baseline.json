@@ -11,6 +11,14 @@
     "onnxruntime-gpu": {
       "baseline": "1.17.3",
       "port-version": 0
+    },
+    "cuda": {
+      "baseline": "11.8",
+      "port-version": 13
+    },
+    "cudnn": {
+      "baseline": "8.9",
+      "port-version": 14
     }
   }
 }
