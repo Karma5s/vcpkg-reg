@@ -14,11 +14,11 @@
     },
     "cuda": {
       "baseline": "11.8",
-      "port-version": 13
+      "port-version": 0
     },
     "cudnn": {
       "baseline": "8.9",
-      "port-version": 14
+      "port-version": 0
     }
   }
 }
